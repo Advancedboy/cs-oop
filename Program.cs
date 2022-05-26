@@ -10,22 +10,19 @@ namespace oop
     {
         static void Main(string[] args)
         {
-            Person p = new Person();
-            p.FirstName = "Pavel";
-
-            Person p2 = new Person();
-            p.FirstName = "Anastasia";
-
             var doctor = new Doctor();
-            doctor.FirstName = "Alex";
-            doctor.years = 10;
-            doctor.m();
+            doctor.FirstName = "Sergey";
+            Console.WriteLine(doctor.FirstName);
+            Console.WriteLine(doctor.Specialization);
 
-            var doctortrainee = new Doctor_trainee();
-            doctortrainee.years = 1;
-            doctortrainee.FirstName = "Denis";
 
-            Console.WriteLine(doctortrainee.premium());
+            Person p = doctor;
+
+            Console.WriteLine(p.FirstName);
+
+            Doctor dd = (Doctor)p;
+
+            Console.WriteLine(dd.Specialization);
 
         }
     }

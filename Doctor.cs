@@ -8,12 +8,7 @@ namespace oop
 {
     internal class Doctor : Person
     {
-        public int years = 10;
-        
-        public void m()
-        {
-            Console.WriteLine(Money);
-        }
+        public string Specialization = "traumatology";
         
     }
 }
